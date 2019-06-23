@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     	   <meta charset="utf-8"/>
+     	   <title>买猜商城</title>
+     </head>
+  <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+         }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .header{
+            height:200px;
+            width: 1200px;
+            margin: 0px auto;
+            background-color: white;  
+        }
+        .zuishangmian{
+            width:1200px;
+            height: 25px;
+            padding-top: 5px;
+            text-align: right;
+        }
+        .sousuo{
+            width: 600px;
+            height: 45px;
+            border: 1px solid black;
+            position: relative;
+            top:-20px;
+            left: 410px;
+        }
+        .sousuokuang{
+            border: none;
+            width: 540px;
+            height: 45px;
+            text-align: center;
+            float: left;
+            color: #C5C4C4;
+        }
+        .fangdajing{
+            width: 59px;
+            height: 46px;
+            border-left:1px solid black;
+            float: right;
+        }
+        .fangdajing1{
+            position: relative;
+            top:5px;
+            left: 12px;
+        }
+        .gouwuche{
+            width: 34px;
+            height: 28px;
+            position: relative;
+            top:-35px;
+            left:750px;
+            border: none;
+        }
+        .yidadui{
+            position: relative;
+            top:20px;
+            left: -400px;
+            width: 1200px;
+            height: 40px;
+        }
+        
+        .yige1{
+            width: 140px;
+            height: 29px;
+            padding-top:13px;
+            float: left;
+            
+        }
+        .yige{
+            width: 80px;
+            height: 33px;
+            padding-top:13px;
+            text-align: center;
+            float: left;
+            margin-right: 35px;
+            
+        }
+        .yige:hover{
+            border-bottom: 5px solid rgb(58,167,71);
+        }
+
+
+        .yige a:hover{
+            color: rgb(58,167,71);
+        }
+
+        .ba{
+            width: 100%;
+            height: 730px;
+            position: relative;
+            top:10px;
+            left: -350px;
+            }
+         .rf1{
+            position: fixed;
+            height:330px;
+            width:45px;
+             background-color: #000000;
+             margin-top:-670px;
+             margin-left: 1522px;
+        }
+        .rf1 li{
+            padding-bottom: 35px;
+        }
+
+        .san{
+            padding-left: 900px;
+            margin-bottom: 0 auto;
+            text-indent: center;
+         }
+         li{
+            list-style:none;
+            display: inline;
+            border: 1px solid #000000;
+            width: 150px;
+            height: 30px;  
+         }
+         .zhengti{
+            border:1px solid black;
+            position: relative;
+            left: 50px;
+            height: 140px;
+            width: 1200px;
+         }
+        .biaoge{
+            border: 1px solid black;
+            height: 45px;
+            width: 1200px;
+        }
+        .biaoge1{            
+            height: 30px;
+            width: 110px;
+            text-align: center;
+            padding-top:10px;
+            float: left;
+            margin-right:15px;
+        }
+        .et{
+            margin-top: 30px;
+            margin-left: 40px;
+            padding-left: 60px;
+            float: left;
+            width: 1150px;
+            height: 750px;
+            background-color:#ffffff;
+        }
+         .et1{
+            width: 1150px;
+            height: 375px;
+         }
+        .et2{
+            margin: 10px;
+            float: left;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px; 
+             }
+           .f1{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img1.png) no-repeat center;
+              }
+            .f1 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+                 }
+            .a1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px; 
+        }
+        .mo1{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img2.png) no-repeat center;
+              }
+
+            .mo1 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+             .t5{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px; 
+        }
+        .ee3{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img3.png) no-repeat center;
+              }
+
+            .ee3 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+             .ww1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px;
+            } 
+            .ww2{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img4.png) no-repeat center;
+              }
+
+            .ww2 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+            .tte1{
+            margin-top: 30px;
+            margin-left: -60px;
+            padding-left: 60px;
+            float: left;
+            width: 1150px;
+            height: 350px;
+            background-color:#ffffff;
+        }
+         .ss1{
+            width: 1150px;
+            height: 375px;
+         }
+        .ss2{
+            margin: 0px;
+            float: left;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px; 
+             }
+               .ss1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px;
+            } 
+            .ss2{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img5.png) no-repeat center;
+              }
+
+            .ss2 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+              .zz1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px;
+            } 
+            .zz2{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img6.png) no-repeat center;
+              }
+
+            .zz2 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+              .kk1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px;
+            } 
+            .kk2{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img7.png) no-repeat center;
+              }
+
+            .kk2 p{
+                position: relative;
+                top: 200px;
+                left: 50px;
+            }
+              .ll1{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height:245px;
+            border:1px solid #ccc;
+            border-radius: 1px;
+            } 
+            .ll2{
+                width: 250px;
+                height: 245px;
+                background: url(所需小图/img8.png) no-repeat center;
+              }
+
+            .ll2 p{
+                position:relative;
+                top: 200px;
+                left: 50px;
+            }
+        .r1{
+            left:200px;
+            top:10px;
+            margin-left: -580px;
+            margin-top: 30px;
+            float: left;
+            width: 2100px;
+            height: 70px;
+            background-color:#e5e5e5;
+        }
+        .pnnh{
+            margin-top: 10px;
+            margin-left: 620px;
+         }
+
+        .w3w{
+            margin-top: -52px;
+            margin-left: 700px;
+            font-size: 1.2em;
+        }
+        .s2s{
+            margin-top: 1px;
+            margin-left:701px;
+        }
+        .b1{
+            margin-top: -48px;
+            margin-left: 900px;
+        }
+        .b3{
+            margin-top: -51px;
+            margin-left: 77px;
+            font-size: 1.2em;
+        }
+        .b4{
+            margin-left: 77px;
+        }
+        .xx1{
+            margin-top: -47px;
+            margin-left: 1200px;
+        }
+        .xx3{
+            margin-top: -49px;
+            margin-left: 73px;
+            font-size: 1.2em;
+        }
+        .xx4{
+             margin-top: 2px;
+             margin-left: 72px;
+        }
+        .nn1{
+            margin-top: -50px;
+            margin-left: 1440px;
+        }
+        .nn3{
+            margin-top: -51px;
+            margin-left: 69px;
+            font-size: 1.2em;
+        }
+        .nn4{
+            margin-top: 2px;
+            margin-left: 69px;
+        }
+        .ttr1 p{
+                   text-align: center;
+               }
+ 
+    </style>
+        
+        
+     <body>
+
+     	<div class="header">
+            <div class="zuishangmian">
+                <a href="">嘿，欢迎来到买猜商城！      </a>
+                <a href="">请登录     </a> 
+                <a href="">      免费注册</a>
+                <select selected style="border: none; font-size: 15px;">
+                    <option>我的订单   </option>
+                </select>
+                <select selected style="border: none; font-size: 15px">
+                    <option>我的买猜   </option>
+                </select>
+                <a href="" >帮助中心   </a>
+                <a href=""><img src="所需小图/wb.png"/></a>
+                <a href=""><img src="所需小图/wx.png"/></a>
+            </div>
+            <img src="所需小图/logo.png" style="position: relative;
+                                                top: 30px;"/>
+            <div class="sousuo">
+                <input  type="text" value="请输入搜索内容" class="sousuokuang"/>
+
+                <div class="fangdajing">
+                    <input class="fangdajing1" type="image" src="所需小图/search.png" />
+                </div>
+
+                <div class="gouwuche">
+                    <input type="image" src="所需小图/cart.png" />
+                </div>
+                
+                <div class="yidadui">
+                    <div class="yige1"><a href="">全部商品分类</a></div>
+                    <div class="yige"><a href="">首页</a></div>
+                    <div class="yige"><a href="">名酒</a></div>
+                    <div class="yige"><a href="">茗茶</a></div>
+                    <div class="yige"><a href="">玉石</a></div>
+                    <div class="yige"><a href="">休闲食品</a></div>
+                    <div class="yige"><a href="">洗护用品</a></div>
+                    <div class="yige"><a href="">土特产</a></div>
+                    <div class="yige"><a href="">积分商城</a></div>
+                    <div class="yige"><a href="">抽奖游戏</a></div>
+                </div>                
+            </div>
+
+        <div class="ba">
+            <img src="所需小图/banner.png" alt="feicui" class="feicui" />
+        </div>
+
+
+    <div class="rf1">
+       <ul>
+        <li>
+            <div class="rf2">
+                <img src="所需小图/cart1.png" alt="gouwu"/>
+            </div>
+        </li>
+        <li>
+        <div class="rf3">
+            <img src="所需小图/qq.png" alt="QQ"/>
+        </div>
+    </li>
+    <li>
+            <div class="rf4">
+                <img src="所需小图/zuji.png" alt="wnnw"/>
+            </div>
+        </li>
+        <li>
+                <div class="rf5">
+                    <img src="所需小图/erweima.png" alt="dpdp"/>
+                </div>
+            </li>
+            <li>
+                    <div class="rf5">
+                        <img src="所需小图/gotop.png" alt="alal"/>
+                    </div>
+                </li>
+            </ul>
+                </div>
+
+    <div class="sy">
+        <p >首页>玉石                     共200件相关产品</p>
+        
+    </div>
+    <div class="nnn">
+        <div class="zhengti">
+                <div class="biaoge">
+                    <div class="biaoge1"><a href="">玉石</a></div>
+                    <div class="biaoge1"><a href="">白玉</a></div>
+                    <div class="biaoge1"><a href="">碧玉</a></div>
+                    <div class="biaoge1"><a href="">黄玉</a></div>
+                    <div class="biaoge1"><a href="">和田玉</a></div>
+                    <div class="biaoge1"><a href="">翡翠</a></div>
+                    <div class="biaoge1"><a href="">绿松玉</a></div>
+                    <div class="biaoge1"><a href="">墨玉</a></div>
+                </div>
+
+                <div class="biaoge">
+                    <div class="biaoge1"><a href="">其他</a></div>
+                    <div class="biaoge1"><a href="">吊坠</a></div>
+                    <div class="biaoge1"><a href="">扳指</a></div>
+                    <div class="biaoge1"><a href="">手镯</a></div>
+                </div>
+
+                <div class="biaoge">
+                    <div class="biaoge1"><a href="">地区</a></div>
+                    <div class="biaoge1"><a href="">北京</a></div>
+                    <div class="biaoge1"><a href="">安徽</a></div>
+                    <div class="biaoge1"><a href="">福建</a></div>
+                    <div class="biaoge1"><a href="">内蒙古</a></div>
+                    <div class="biaoge1"><a href="">宁夏</a></div>
+                    <div class="biaoge1"><a href="">黑龙江</a></div>
+                    <div class="biaoge1"><a href="">河北</a></div>
+                    <div class="biaoge2">更多</div>
+                </div>
+            </div>
+    </div>
+     <div class="et">
+     <div class="et1">
+        <div class="et2">
+     <div class="f1">
+        <p>竞猜价:399.00</p>
+       <p> 翡翠牵手观音吊坠</p>
+        </div>
+    </div>
+        <div class="a1">
+        <div class="mo1">
+        <p>竞猜价：￥1980.00</p>
+        <p>翡翠龙凤吊坠</p>
+    </div>
+</div>
+    <div class="t5">
+        <div class="ee3">
+        <p>竞猜价:199.00</p>
+        <p>翡翠花蕊吊坠</p>
+    </div>
+</div>
+    <div class="ww1">
+        <div class="ww2">
+        <p>竞猜价:199.00</p>
+        <p>翡翠如意吊坠</p>
+    </div>
+</div>
+<div class="tte1">
+    <div class="ss1">
+        <div class="ss2">
+        <p>竞猜价:99.00</p>
+        <p>翡翠蝉吊坠</p>
+    </div>
+</div>
+    <div class="zz1">
+        <div class="zz2">
+        <p>竞猜价:99.00</p>
+        <p>翡翠观音（浅色）吊坠</p>
+    </div>
+</div>
+    <div class="kk1">
+        <div class="kk2">
+        <p>竞猜价:199.00</p>
+        <p>翡翠平安扣（深色）吊坠</p>
+    </div>
+</div>
+    <div class="ll1">
+        <div class="ll2">
+        <p>竞猜价:199.00</p>
+        <p>翡翠如意吊坠</p>
+    </div>
+</div>
+</div>
+</div>      
+
+
+   <div class="r1">
+        
+        <div class="r2">
+            <div class="pnnh">
+            <img src="所需小图/f1.png" alt="yi"/>
+        </div>
+         <div class="w3w">资质认证</div>
+         <div class="s2s">服务商100%实名认证</div>
+     </div>
+     <div class="b1">
+         <div class="b2">
+            <img src="所需小图/f2.png" alt="yir"/>
+         </div>
+         <div class="b3">支付安全</div>
+         <div class="b4">明码标价支付及信息安全</div>
+     </div>
+     <div class="xx1">
+         <div class="xx2">
+            <img src="所需小图/f3.png" alt="wor"/>
+         </div>
+         <div class="xx3">保险赔付</div>
+         <div class="xx4">为您提供担保赔付</div>
+     </div>
+     <div class="nn1">
+         <div class="nn2">
+            <img src="所需小图/f4.png" alt="wnr"/>
+         </div>
+         <div class="nn3">售后无忧</div>
+         <div class="nn4">服务出问题经理全程跟进</div>
+     </div>
+</div>
+</div>
+
+<div class="ttr1">
+  <p>首页 | 工商代理 | 财务代记账 | 股权交易与变更 | 企业贷款 | 办公室租赁 | 社保公职业代理 | 法律服务</p>
+  <p>2017-2018 买猜商城有限公司 版权所有</p>
+</div>
+
+   
+</body>
+</html>
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+            
